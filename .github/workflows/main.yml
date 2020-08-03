@@ -31,3 +31,10 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
+    
+    - uses: actions-hub/gcloud@master
+      env:     
+        PROJECT_ID: chromatic-night-278519
+        APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
+      with:
+        args: info
