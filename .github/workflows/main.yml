@@ -37,4 +37,4 @@ jobs:
         PROJECT_ID: chromatic-night-278519
         APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
       with:
-        args: info
+        args: gsutil ls
